@@ -7,3 +7,5 @@ if (str.includes(check)) {
 } else {
   console.log(`${check} n'est pas présent.`)
 }
+
+console.log(str.includes(check) ? `${check} est bien présent dans la phrase` : `${check} n'est pas présent.`)
