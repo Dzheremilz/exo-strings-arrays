@@ -2,6 +2,7 @@ const str = 'YRMV PFL VMVI YRU R UIVRD EVF KYRK PFL NVIV JF JLIV NRJ IVRC NYRK Z
 
 let buff
 let decypher
+const word = [' the ', ' be ', ' to ', ' of ', ' and ', ' in ', ' that', ' have ', ' it ', ' for ']
 
 for (let decalage = 1; decalage < 26; decalage++) {
   decypher = ''
@@ -18,5 +19,11 @@ for (let decalage = 1; decalage < 26; decalage++) {
       decypher += ' '
     }
   }
-  console.log(`Pour un décalage de ${decalage} le code devient :\n${decypher}\n\n`)
+  //console.log(decypher)
+  for (let j = 0; j < word.length; j++) {
+    if (decypher.includes(word[j].toUpperCase())) {
+      console.log(`La bonne solution semble être:\nPour un décalage de ${decalage} le code devient :\n${decypher}\n\n`)
+      break
+    }
+  }
 }
