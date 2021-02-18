@@ -21,7 +21,7 @@ indexLetter = Math.max(...array)
 console.log('Index de la lettre avec le plus d\'occurence: ' + indexLetter)
 MostOccurence = array.findIndex(x => x === indexLetter) + 65
 console.log('Code UTF-16 de la lettre: ' + MostOccurence)
-console.log('Lettre: ' + String.fromCharCode(86))
+console.log('Lettre: ' + String.fromCharCode(MostOccurence))
 
 if (MostOccurence < 69) {
   shift = 69 - MostOccurence
