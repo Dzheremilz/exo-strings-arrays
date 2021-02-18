@@ -32,7 +32,7 @@ if (MostOccurence < 69) {
 console.log(`Décalage de : ${shift}`)
 
 for (let i = 0; i < msg.length; i++) {
-  if (msg.charCodeAt(i) != 32) {
+  if (msg.charCodeAt(i) !== 32) {
     if (msg.charCodeAt(i) > 90 - shift) {
       buff = msg.charCodeAt(i) - 26 + shift
       decypher += String.fromCharCode(buff)
