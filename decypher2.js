@@ -2,6 +2,7 @@ let msg = 'YRMV PFL VMVI YRU R UIVRD EVF KYRK PFL NVIV JF JLIV NRJ IVRC NYRK ZW 
 
 // E : 69
 let array = []
+let indexLetter
 let MostOccurence
 let shift
 let buff
@@ -16,8 +17,9 @@ for (let j = 0; j < msg.length; j++) {
   }
 }
 console.log(array)
-console.log('Index de la lettre avec le plus d\'occurence: ' + Math.max(...array))
-MostOccurence = array.findIndex(x => x === 25) + 65
+indexLetter = Math.max(...array)
+console.log('Index de la lettre avec le plus d\'occurence: ' + indexLetter)
+MostOccurence = array.findIndex(x => x === indexLetter) + 65
 console.log('Code UTF-16 de la lettre: ' + MostOccurence)
 console.log('Lettre: ' + String.fromCharCode(86))
 
