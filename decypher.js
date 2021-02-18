@@ -22,7 +22,7 @@ for (let decalage = 1; decalage < 26; decalage++) {
   //console.log(decypher)
   for (let j = 0; j < word.length; j++) {
     if (decypher.includes(word[j].toUpperCase())) {
-      console.log(`La bonne solution semble être:\nPour un décalage de ${decalage} le code devient :\n${decypher}\n\n`)
+      console.log(`La bonne solution semble être:\nPour un décalage de ${26 - decalage} le code devient :\n${decypher}\n\n`)
       break
     }
   }
